@@ -15,9 +15,8 @@ efforts are for now focused on the Windows one.
 Build
 ------------------------------------------
 
-`git clone https://github.com/adriens/schemacrawler-izpack`
-
-`mvn clean package`
+`git clone https://github.com/adriens/schemacrawler-izpack
+mvn clean package`
 
 This is it : the installer has been built.
 

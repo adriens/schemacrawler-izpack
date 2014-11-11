@@ -26,6 +26,11 @@ Install from command line (with GUI)
 
 `java -jar target/schemacrawler-lzpack-${version}`
 
+Install from command line (no GUI, console only)
+------------------------------------------
+
+`java -jar target/schemacrawler-lzpack-${version} -console`
+
 
 Install from Graphical environment
 ------------------------------------------

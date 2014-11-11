@@ -17,9 +17,9 @@ Build
 
     git clone https://github.com/adriens/schemacrawler-izpack.git
     cd schemacrawler-izpack
-    mvn clean package
+    mvn clean site package
 
-This is it : the installer has been built.
+This is it : the installer has been built (as well as documentation site un target/site/index.html).
 
 
 Install from command line (with GUI)

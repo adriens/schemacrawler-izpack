@@ -1,0 +1,58 @@
+
+<project name="schemacrawler-izpack" xmlns="http://maven.apache.org/DECORATION/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+   <!--
+   <bannerLeft>
+    <src>img/schemacrawler-izpack-banner.png</src>
+    <name>Schemacrawler-izpack</name>
+        <href>https://github.com/adriens/schemacrawler-izpack</href>
+  </bannerLeft>
+-->
+  <bannerRight>
+    <src>img/schemacrawler-izpack-banner.png</src>
+    <name>Schemacrawler-izpack</name>
+        <href>https://github.com/adriens/schemacrawler-izpack</href>
+  </bannerRight>
+  
+  
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.3.1</version>
+    </skin>
+    <custom>
+        <fluidoSkin>
+            <sideBarEnabled>true</sideBarEnabled>
+            <googlePlusOne />
+        </fluidoSkin>
+    </custom>
+
+
+    <body>
+        
+        
+        <!--<breadcrumbs>
+            <item name="Schemacrawler" href="http://schemacrawler.sourceforge.net/"/>
+            <item name="Schemacrawler-deb" href="https://github.com/adriens/schemacrawler-deb"/>
+            <item name="Izpack" href="http://izpack.org/"/>
+            <item name="Graphviz" href="http://www.graphviz.org/"/>
+        </breadcrumbs>
+        -->
+    
+    
+        <links>
+            <item name="Schemacrawler" href="http://schemacrawler.sourceforge.net/"/>
+            <item name="Schemacrawler-deb" href="https://github.com/adriens/schemacrawler-deb"/>
+            <item name="Izpack" href="http://izpack.org/"/>
+            <item name="Graphviz" href="http://www.graphviz.org/"/>
+        </links>
+
+        <menu name="MAIN MENU">
+            <item name="About" href="about.html"/>
+            <item name="Windows Screenshots" href="windows-screenshots.html"/>
+        </menu>
+
+        <menu ref="reports"/>
+    </body>
+</project>

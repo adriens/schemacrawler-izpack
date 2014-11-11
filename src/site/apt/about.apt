@@ -1,0 +1,20 @@
+Schemacrawler-izpack
+
+* About
+
+    The main goal of this project was to make Windows install process easier, that is :
+
+    * Choose which database support to install
+
+    * Install Open source drivers
+
+    * Create nice to use shortcut
+
+    * make the schemacrawler commands available from anywhere in the Windows session
+
+* Notice
+
+
+    This installer does NOT install graphviz. To have the diagramming features fully
+available, it has to be manually installed (and, on windows, being manually added to the PATH, see http://www.graphviz.org/Download_windows.php).
+More general instructions about graphviz are available here : http://www.graphviz.org/Download..php.

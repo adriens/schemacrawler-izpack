@@ -1,0 +1,44 @@
+<shortcuts>
+  <skipIfNotSupported/>
+  <programGroup defaultName="Schemacrawler"
+                location="applications||startMenu"/>
+  <shortcut
+    name="SchemaCrawler Command Line"
+    target="C:\Windows\system32\cmd"
+    commandLine='/c "set path=%path%;C:\Program Files\schemacrawler"&amp;&amp;cls&amp;&amp; START'
+    workingDirectory="$USER_HOME\"
+    description="This starts schemacrawler shell session"
+    iconFile="$INSTALL_PATH\schemacrawler.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="yes"
+    startMenu="yes"
+    startup="yes">
+    
+    <!--
+    <shortcut
+    name="Schemacrawler documentation"
+    description="Schemacrawler official documentation"
+    programGroup="yes"
+     desktop="yes"
+     applications="no"
+     startMenu="yes"
+     startup="no"
+     commandLine="http://schemacrawler.sourceforge.net/index.html"
+     workingDirectory=""
+     commandLine=""
+     initialState="noShow"
+     iconFile="$INSTALL_PATH\schemacrawler.ico"
+     iconIndex="0"
+     url="http://schemacrawler.sourceforge.net/index.html"
+     type="Link"
+     encoding="UTF-8"
+    >
+
+    <createForPack name="Base"/>
+    
+  </shortcut>
+  -->
+</shortcuts>

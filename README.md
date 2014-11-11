@@ -16,6 +16,7 @@ Build
 ------------------------------------------
 
 `git clone https://github.com/adriens/schemacrawler-izpack`
+
 `mvn clean package`
 
 This is it : the installer has been built.

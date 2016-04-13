@@ -56,7 +56,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         
-        <izpack.version>5.0.0-rc4</izpack.version>
+        <izpack.version>5.0.7</izpack.version>
         <izpack.staging>${project.build.directory}/staging</izpack.staging>
         
         <postgresql.version>9.3-1102-jdbc41</postgresql.version>

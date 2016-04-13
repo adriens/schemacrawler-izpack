@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/adriens/schemacrawler-izpack.svg?branch=master)](https://travis-ci.org/adriens/schemacrawler-izpack) [![Dependency Status](https://www.versioneye.com/user/projects/570ed124fcd19a0045440c30/badge.svg?style=flat)](https://www.versioneye.com/user/projects/570ed124fcd19a0045440c30)
+
 Schemacrawler Izpack package builder
 ==========================================
 

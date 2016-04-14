@@ -174,39 +174,7 @@
             </executable>
         </pack>
         
-        <pack name="Derby support" parent="OpenSourceDrivers" required="no" preselected="yes">
-            <description>Apache Derby support.</description>
-            <file src="lib/schemacrawler-derby.jar" targetdir="$INSTALL_PATH/lib"/>
-            <file src="lib/derbyclient.jar" targetdir="$INSTALL_PATH/lib"/>
-            <file src="DERBY-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
-            
-            <file src="schemacrawler-derby.cmd" targetdir="$INSTALL_PATH">
-                <os family="windows"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-derby.cmd">
-                <os family="windows"/>
-            </parsable>
-            
-            <file src="schemacrawler-derby.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-derby.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-derby.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
-            
-            <file src="schemacrawler-derby.sh" targetdir="$INSTALL_PATH">
-                <os family="mac"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-derby.sh">
-                <os family="mac"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-derby.sh" stage="never" keep="true">
-                <os family="mac"/>
-            </executable>
-        </pack>
+        
         
         <pack name="HSQLDB support" parent="OpenSourceDrivers" required="no" preselected="yes">
             <description>HSQLDB (HyperSQL DataBase) support.</description>

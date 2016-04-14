@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github</groupId>
     <artifactId>schemacrawler-lzpack</artifactId>
-    <version>11.01.01</version>
+    <version>14.07.07</version>
     <packaging>jar</packaging>
     
     
@@ -24,7 +24,7 @@
                 <role>Projet creator</role>
             </roles>
             <timezone>+11</timezone>
-            <url>https://github.com/adriens/schemacrawler-izpack</url>
+            <url>https://www.linkedin.com/in/adrien-sales-898b7270</url>
         </developer>
     </developers>
     
@@ -69,6 +69,9 @@
         <xpp3_min.version>1.1.4c</xpp3_min.version>
         <xstream.version>1.4.4</xstream.version>
         <jt400.version>6.7</jt400.version>
+        <h2.version>1.4.191</h2.version>
+        <mariadb.version>1.4.2</mariadb.version>
+        
     </properties>
     
     <dependencies>
@@ -122,6 +125,16 @@
             <groupId>net.sf.jt400</groupId>
             <artifactId>jt400</artifactId>
             <version>${jt400.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>${mariadb.version}</version>
         </dependency>
         
         <!-- Offline feature dependencies -->
@@ -213,21 +226,7 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
-                                    <artifactId>schemacrawler-generic</artifactId>
-                                    <version>${project.version}</version>
-                                    <overWrite>true</overWrite>
-                                    <outputDirectory>${izpack.staging}/lib</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-postgresql</artifactId>
-                                    <version>${project.version}</version>
-                                    <overWrite>true</overWrite>
-                                    <outputDirectory>${izpack.staging}/lib</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>us.fatehi</groupId>
-                                    <artifactId>schemacrawler-derby</artifactId>
                                     <version>${project.version}</version>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${izpack.staging}/lib</outputDirectory>
@@ -241,7 +240,21 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
+                                    <artifactId>schemacrawler-h2</artifactId>
+                                    <version>${project.version}</version>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>${izpack.staging}/lib</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-mysql</artifactId>
+                                    <version>${project.version}</version>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>${izpack.staging}/lib</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>us.fatehi</groupId>
+                                    <artifactId>schemacrawler-mariadb</artifactId>
                                     <version>${project.version}</version>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${izpack.staging}/lib</outputDirectory>
@@ -288,13 +301,7 @@
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${izpack.staging}/lib</outputDirectory>
                                 </artifactItem>
-                                <artifactItem>
-                                    <groupId>us.fatehi</groupId>
-                                    <artifactId>schemacrawler-generic</artifactId>
-                                    <version>${project.version}</version>
-                                    <overWrite>true</overWrite>
-                                    <outputDirectory>${izpack.staging}/lib</outputDirectory>
-                                </artifactItem>
+                                
                             </artifactItems>
                         </configuration>
                     </execution>

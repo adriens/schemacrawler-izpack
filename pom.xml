@@ -75,6 +75,10 @@
         <xpp3_min.version>1.1.4c</xpp3_min.version>
         <xstream.version>1.4.9</xstream.version>
         
+        <!-- Maven plugin properties -->
+        <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
+        <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
+        
     </properties>
     
     <dependencies>
@@ -184,7 +188,7 @@
             <!-- configure the compiler to use 1.5  -->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.2</version>
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
                     <encoding>${project.build.sourceEncoding}</encoding>
                     <source>1.8</source>
@@ -385,7 +389,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>2.7</version>
+                <version>${maven-project-info-reports-plugin.version}</version>
             </plugin>
     </plugins>
     </reporting>

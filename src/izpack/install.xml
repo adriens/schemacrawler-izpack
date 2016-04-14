@@ -456,10 +456,6 @@
             <file src="HOW-TO-DB2.txt" targetdir="$INSTALL_PATH"/>
         </pack>
         
-        <pack name="Generic Database Support" parent="Schemacrawler" required="yes" preselected="yes">
-            <description>Generic database support. Please download the JDBC driver for your database, and place the jar file in the lib folder</description>
-            <file src="lib/schemacrawler-generic.jar" targetdir="$INSTALL_PATH/lib"/>
-        </pack>
         
         <pack name="DB2/400 iSeries jt400 driver" parent="OpenSourceDrivers" required="no" preselected="yes">
             <description>DB2/400 iSeries driver</description>

@@ -10,7 +10,7 @@
             <author name="Sualeh Fatehi" email="Sualeh.Fatehi@gmail.com"/>
             <author name="Adrien Sales" email="Adrien.Sales@gmail.com"/>
         </authors>
-        <url>http://schemacrawler.sourceforge.net/</url>
+        <url>http://sualeh.github.io/SchemaCrawler/</url>
         <javaversion>1.7</javaversion>
         <run-privileged/>
         <requiresjdk>no</requiresjdk>

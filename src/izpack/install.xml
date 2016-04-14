@@ -145,33 +145,6 @@
             <file src="lib/schemacrawler-postgresql.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/postgresql.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="POSTGRESQL-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
-            
-            <file src="schemacrawler-postgres.cmd" targetdir="$INSTALL_PATH">
-                <os family="windows"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-postgres.cmd">
-                <os family="windows"/>
-            </parsable>
-            
-            <file src="schemacrawler-postgres.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-postgres.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-postgres.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
-            
-            <file src="schemacrawler-postgres.sh" targetdir="$INSTALL_PATH">
-                <os family="mac"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-postgres.sh">
-                <os family="mac"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-postgres.sh" stage="never" keep="true">
-                <os family="mac"/>
-            </executable>
         </pack>
         
         
@@ -181,33 +154,6 @@
             <file src="lib/schemacrawler-hsqldb.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/hsqldb.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="HSQLDB-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
-            
-            <file src="schemacrawler-hsqldb.cmd" targetdir="$INSTALL_PATH">
-                <os family="windows"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-hsqldb.cmd">
-                <os family="windows"/>
-            </parsable>
-            
-            <file src="schemacrawler-hsqldb.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-hsqldb.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-hsqldb.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
-            
-            <file src="schemacrawler-hsqldb.sh" targetdir="$INSTALL_PATH">
-                <os family="mac"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-hsqldb.sh">
-                <os family="mac"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-hsqldb.sh" stage="never" keep="true">
-                <os family="mac"/>
-            </executable>
         </pack>
         
         <pack name="MySQLsupport" parent="OpenSourceDrivers" required="no" preselected="yes">
@@ -215,67 +161,12 @@
             <file src="lib/schemacrawler-mysql.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/mysql-connector-java.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="MYSQL-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
-            
-            <file src="schemacrawler-mysql.cmd" targetdir="$INSTALL_PATH">
-                <os family="windows"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-mysql.cmd">
-                <os family="windows"/>
-            </parsable>
-            
-            <file src="schemacrawler-mysql.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-mysql.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-mysql.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
-            
-            <file src="schemacrawler-mysql.sh" targetdir="$INSTALL_PATH">
-                <os family="mac"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-mysql.sh">
-                <os family="mac"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-mysql.sh" stage="never" keep="true">
-                <os family="mac"/>
-            </executable>
         </pack>
         
         <pack name="OfflineSupport" parent="Schemacrawler" required="no" preselected="yes">
             <description>Offline database support.</description>
             <file src="lib/schemacrawler-offline.jar" targetdir="$INSTALL_PATH/lib"/>
-            
-            <file src="schemacrawler-offline.cmd" targetdir="$INSTALL_PATH">
-                <os family="windows"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-offline.cmd">
-                <os family="windows"/>
-            </parsable>
-            
-            <file src="schemacrawler-offline.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-offline.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-offline.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
-            
-            <file src="schemacrawler-offline.sh" targetdir="$INSTALL_PATH">
-                <os family="mac"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-offline.sh">
-                <os family="mac"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-offline.sh" stage="never" keep="true">
-                <os family="mac"/>
-            </executable>
-            
-            
+
             <file src="lib/xmlpull.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/xpp3_min.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/xstream.jar" targetdir="$INSTALL_PATH/lib"/>
@@ -284,35 +175,6 @@
         <pack name="OracleSupport" parent="ProprietaryDrivers" required="no" preselected="yes">
             <description>Oracle database support (manual download of drivers required). Place the jar file in the lib folder</description>
             <file src="lib/schemacrawler-oracle.jar" targetdir="$INSTALL_PATH/lib"/>
-            
-            <file src="schemacrawler-oracle.cmd" targetdir="$INSTALL_PATH">
-                <os family="windows"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-oracle.cmd">
-                <os family="windows"/>
-            </parsable>
-            
-            <file src="schemacrawler-oracle.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-oracle.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-oracle.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
-            
-            <file src="schemacrawler-oracle.sh" targetdir="$INSTALL_PATH">
-                <os family="mac"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-oracle.sh">
-                <os family="mac"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-oracle.sh" stage="never" keep="true">
-                <os family="mac"/>
-            </executable>
-            
-            
             <file src="HOW-TO-ORACLE.txt" targetdir="$INSTALL_PATH"/>
         </pack>
         
@@ -321,33 +183,6 @@
             <file src="lib/schemacrawler-sqlite.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/sqlite-jdbc.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="SQLITE-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
-            
-            <file src="schemacrawler-sqlite.cmd" targetdir="$INSTALL_PATH">
-                <os family="windows"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-sqlite.cmd">
-                <os family="windows"/>
-            </parsable>
-            
-            <file src="schemacrawler-sqlite.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-sqlite.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-sqlite.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
-            
-            <file src="schemacrawler-sqlite.sh" targetdir="$INSTALL_PATH">
-                <os family="mac"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-sqlite.sh">
-                <os family="mac"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-sqlite.sh" stage="never" keep="true">
-                <os family="mac"/>
-            </executable>
         </pack>
         
         <pack name="SQL Server Support" parent="OpenSourceDrivers" required="no" preselected="yes">
@@ -355,68 +190,11 @@
             <file src="lib/schemacrawler-sqlserver.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/jtds.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="SQLSERVER-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
-            
-            <file src="schemacrawler-sqlserver.cmd" targetdir="$INSTALL_PATH">
-                <os family="windows"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-sqlserver.cmd">
-                <os family="windows"/>
-            </parsable>
-            
-            <file src="schemacrawler-sqlserver.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-sqlserver.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-sqlserver.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
-            
-            <file src="schemacrawler-sqlserver.sh" targetdir="$INSTALL_PATH">
-                <os family="mac"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-sqlserver.sh">
-                <os family="mac"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-sqlserver.sh" stage="never" keep="true">
-                <os family="mac"/>
-            </executable>
-            
-            
         </pack>
         
         <pack name="Sybase IQ Support" parent="ProprietaryDrivers" required="no" preselected="yes">
             <description>Sybase IQ support. Please download the Sybase JCONN3 database driver, and place the jar file in the lib folder.</description>
             <file src="lib/schemacrawler-sybaseiq.jar" targetdir="$INSTALL_PATH/lib"/>
-            
-            <file src="schemacrawler-sybaseiq.cmd" targetdir="$INSTALL_PATH">
-                <os family="windows"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-sybaseiq.cmd">
-                <os family="windows"/>
-            </parsable>
-            
-            <file src="schemacrawler-sybaseiq.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-sybaseiq.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-sybaseiq.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
-            
-            <file src="schemacrawler-sybaseiq.sh" targetdir="$INSTALL_PATH">
-                <os family="mac"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-sybaseiq.sh">
-                <os family="mac"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-sybaseiq.sh" stage="never" keep="true">
-                <os family="mac"/>
-            </executable>
-            
             
             <file src="HOW-TO-SYBASEIQ.txt" targetdir="$INSTALL_PATH"/>
         </pack>
@@ -424,34 +202,6 @@
         <pack name="IBM DB2 UDB Support" parent="ProprietaryDrivers" required="no" preselected="yes">
             <description>IBM DB2 UDB Support.Please download the IBM DB2 database driver, and place the jar file in the lib folder</description>
             <file src="lib/schemacrawler-db2.jar" targetdir="$INSTALL_PATH/lib"/>
-            
-            <file src="schemacrawler-db2.cmd" targetdir="$INSTALL_PATH">
-                <os family="windows"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-db2.cmd">
-                <os family="windows"/>
-            </parsable>
-            
-            <file src="schemacrawler-db2.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-db2.sh">
-                <os family="unix"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-db2.sh" stage="never" keep="true">
-                <os family="unix"/>
-            </executable>
-            
-            <file src="schemacrawler-db2.sh" targetdir="$INSTALL_PATH">
-                <os family="mac"/>
-            </file>
-            <parsable targetfile="$INSTALL_PATH/schemacrawler-db2.sh">
-                <os family="mac"/>
-            </parsable>
-            <executable targetfile="$INSTALL_PATH/schemacrawler-db2.sh" stage="never" keep="true">
-                <os family="mac"/>
-            </executable>
-            
             
             <file src="HOW-TO-DB2.txt" targetdir="$INSTALL_PATH"/>
         </pack>

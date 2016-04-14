@@ -104,7 +104,9 @@
             <description>Schemacrawler base files (including base lints)</description>
             <file src="README.txt" targetdir="$INSTALL_PATH"/>
             <file src="LICENCE.txt" targetdir="$INSTALL_PATH"/>
-            <file src="schemacrawler.ico" targetdir="$INSTALL_PATH"/>
+            <file src="schemacrawler.ico" targetdir="$INSTALL_PATH">
+                <os family="windows"/>
+            </file>
             
             <file src="schemacrawler.cmd" targetdir="$INSTALL_PATH">
                 <os family="windows"/>
@@ -136,28 +138,46 @@
             <!-- Base jars -->
             <file src="lib/schemacrawler.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/schemacrawler-lint.jar" targetdir="$INSTALL_PATH/lib"/>
-            <file src="HOW-TO.txt" targetdir="$INSTALL_PATH"/>
+            <file src="HOW-TO.txt" targetdir="$INSTALL_PATH/lib"/>
         </pack>
         
         
         <pack name="PostgreSQL support" parent="OpenSourceDrivers" required="no" preselected="yes">
-            <description>PostgresSQL support.</description>
+            <description>PostgresSQL full support (dedicated schemacrawler lib and jdbc driver).</description>
             <file src="lib/schemacrawler-postgresql.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/postgresql.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="POSTGRESQL-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
         </pack>
         
+        <pack name="MariaDb support" parent="OpenSourceDrivers" required="no" preselected="yes">
+            <description>MariaDb full support (dedicated schemacrawler lib and jdbc driver).</description>
+            <file src="lib/schemacrawler-mariadb.jar" targetdir="$INSTALL_PATH/lib"/>
+            <file src="lib/mariadb-java-client.jar" targetdir="$INSTALL_PATH/lib"/>
+            <!--<file src="POSTGRESQL-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>-->
+        </pack>
+        <pack name="h2 support" parent="OpenSourceDrivers" required="no" preselected="yes">
+            <description>h2 full support (dedicated schemacrawler lib and jdbc driver).</description>
+            <file src="lib/schemacrawler-h2.jar" targetdir="$INSTALL_PATH/lib"/>
+            <file src="lib/h2.jar" targetdir="$INSTALL_PATH/lib"/>
+            <!--<file src="POSTGRESQL-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>-->
+        </pack>
+        <pack name="Derby support" parent="OpenSourceDrivers" required="no" preselected="yes">
+            <description>Apache Derby support (jdbc driver only).</description>
+            <file src="lib/derbyclient.jar" targetdir="$INSTALL_PATH/lib"/>
+            <!--<file src="POSTGRESQL-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>-->
+        </pack>
+        
         
         
         <pack name="HSQLDB support" parent="OpenSourceDrivers" required="no" preselected="yes">
-            <description>HSQLDB (HyperSQL DataBase) support.</description>
+            <description>HSQLDB (HyperSQL DataBase) full support (dedicated schemacrawler lib and jdbc driver).</description>
             <file src="lib/schemacrawler-hsqldb.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/hsqldb.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="HSQLDB-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
         </pack>
         
         <pack name="MySQLsupport" parent="OpenSourceDrivers" required="no" preselected="yes">
-            <description>MySQL support.</description>
+            <description>MySQL full support (dedicated schemacrawler lib and jdbc driver).</description>
             <file src="lib/schemacrawler-mysql.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/mysql-connector-java.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="MYSQL-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
@@ -175,18 +195,18 @@
         <pack name="OracleSupport" parent="ProprietaryDrivers" required="no" preselected="yes">
             <description>Oracle database support (manual download of drivers required). Place the jar file in the lib folder</description>
             <file src="lib/schemacrawler-oracle.jar" targetdir="$INSTALL_PATH/lib"/>
-            <file src="HOW-TO-ORACLE.txt" targetdir="$INSTALL_PATH"/>
+            <file src="HOW-TO-ORACLE.txt" targetdir="$INSTALL_PATH/lib"/>
         </pack>
         
         <pack name="SqliteSupport" parent="OpenSourceDrivers" required="no" preselected="yes">
-            <description>SQLLite support.</description>
+            <description>SQLLite full support (dedicated schemacrawler lib and jdbc driver).</description>
             <file src="lib/schemacrawler-sqlite.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/sqlite-jdbc.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="SQLITE-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
         </pack>
         
         <pack name="SQL Server Support" parent="OpenSourceDrivers" required="no" preselected="yes">
-            <description>SQL Server support.</description>
+            <description>SQL Server full support (dedicated schemacrawler lib and jdbc driver).</description>
             <file src="lib/schemacrawler-sqlserver.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/jtds.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="SQLSERVER-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>
@@ -196,19 +216,19 @@
             <description>Sybase IQ support. Please download the Sybase JCONN3 database driver, and place the jar file in the lib folder.</description>
             <file src="lib/schemacrawler-sybaseiq.jar" targetdir="$INSTALL_PATH/lib"/>
             
-            <file src="HOW-TO-SYBASEIQ.txt" targetdir="$INSTALL_PATH"/>
+            <file src="HOW-TO-SYBASEIQ.txt" targetdir="$INSTALL_PATH/lib"/>
         </pack>
         
         <pack name="IBM DB2 UDB Support" parent="ProprietaryDrivers" required="no" preselected="yes">
-            <description>IBM DB2 UDB Support.Please download the IBM DB2 database driver, and place the jar file in the lib folder</description>
+            <description>IBM DB2 UDB Support. Please download the IBM DB2 database driver, and place the jar file in the lib folder</description>
             <file src="lib/schemacrawler-db2.jar" targetdir="$INSTALL_PATH/lib"/>
             
-            <file src="HOW-TO-DB2.txt" targetdir="$INSTALL_PATH"/>
+            <file src="HOW-TO-DB2.txt" targetdir="$INSTALL_PATH/lib"/>
         </pack>
         
         
         <pack name="DB2/400 iSeries jt400 driver" parent="OpenSourceDrivers" required="no" preselected="yes">
-            <description>DB2/400 iSeries driver</description>
+            <description>DB2/400 iSeries driver only.</description>
             <file src="lib/jt400.jar" targetdir="$INSTALL_PATH/lib"/>
         </pack>
     </packs>

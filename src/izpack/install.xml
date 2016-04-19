@@ -150,6 +150,17 @@
                 <os family="mac"/>
             </executable>
             
+            <file src="create_symlink.sh" targetdir="$INSTALL_PATH">
+                <os family="mac"/>
+            </file>
+            <parsable targetfile="$INSTALL_PATH/create_symlink_mac.sh">
+                <os family="mac"/>
+            </parsable>
+            <executable targetfile="$INSTALL_PATH/create_symlink_mac.sh" stage="postinstall" keep="true" failure="ask">
+                <os family="mac"/>
+            </executable>
+            
+            
             <!-- Base jars -->
             <file src="lib/schemacrawler.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/schemacrawler-lint.jar" targetdir="$INSTALL_PATH/lib"/>

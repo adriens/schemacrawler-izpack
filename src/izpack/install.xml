@@ -31,7 +31,6 @@
         The locale section.
         Asks here to include the English and French langpacks.
     -->
-    
     <locale>
         <langpack iso3="eng"/>
         <langpack iso3="fra"/>
@@ -64,11 +63,7 @@
         <res id="HelloPanel.logo" src="schemacrawler_logo.png"/>
         <res id="LicencePanel.licence" src="LICENCE.txt"/>
         <res id="InfoPanel.info" src="README.txt"/>
-        <!--<res src="shortcutSpec.xml" id="shortcutSpec.xml"/>-->
-        
-        
-        
-        
+
     </resources>
     <natives>
         <native type="izpack" name="ShellLink.dll"/>

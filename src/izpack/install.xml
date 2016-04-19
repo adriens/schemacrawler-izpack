@@ -20,6 +20,7 @@
     <variables>
         <variable name="TargetPanel.dir.windows" value="C:/Program Files/schemacrawler"/>
         <variable name="TargetPanel.dir.unix" value="/opt/schemacrawler"/>
+        <variable name="TargetPanel.dir.mac" value="/usr/local/schemacrawler"/>
     </variables>
     <!-- 
         The gui preferences indication.

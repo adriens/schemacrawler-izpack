@@ -36,6 +36,7 @@
         <langpack iso3="eng"/>
         <langpack iso3="fra"/>
     </locale>
+    
 
     <!-- 
         The resources section.
@@ -56,12 +57,16 @@
     
     
         <!-- Languages resources -->
-        <res id="packsLang.xml_eng" src="packsLang.xml_eng"/>
-        <res id="packsLang.xml" src="packsLang.xml"/>
+        <res id="packsLang.xml_eng" src="i18n/packsLang.xml_eng"/>
+        <res id="packsLang_.xml_fr" src="i18n/packsLang_.xml_fr"/>
+        
+        <!--<res id="packsLang.xml" src="packsLang.xml"/>-->
         <res id="HelloPanel.logo" src="schemacrawler_logo.png"/>
         <res id="LicencePanel.licence" src="LICENCE.txt"/>
         <res id="InfoPanel.info" src="README.txt"/>
-        <res src="shortcutSpec.xml" id="shortcutSpec.xml"/>
+        <!--<res src="shortcutSpec.xml" id="shortcutSpec.xml"/>-->
+        
+        
         
         
     </resources>

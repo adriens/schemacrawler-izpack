@@ -56,7 +56,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         
-        <izpack.version>5.0.6</izpack.version>
+        <izpack.version>5.0.8</izpack.version>
         <izpack.staging>${project.build.directory}/staging</izpack.staging>
         
         <!-- jdbc drivers versions -->

@@ -167,18 +167,18 @@
             <description>MariaDb full support (dedicated schemacrawler lib and jdbc driver).</description>
             <file src="lib/schemacrawler-mariadb.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/mariadb-java-client.jar" targetdir="$INSTALL_PATH/lib"/>
-            <!--<file src="POSTGRESQL-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>-->
+            <!--<file src="MARIADB-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>-->
         </pack>
         <pack name="h2 support" parent="OpenSourceDrivers" required="no" preselected="yes">
             <description>h2 full support (dedicated schemacrawler lib and jdbc driver).</description>
             <file src="lib/schemacrawler-h2.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/h2.jar" targetdir="$INSTALL_PATH/lib"/>
-            <!--<file src="POSTGRESQL-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>-->
+            <!--<file src="H2-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>-->
         </pack>
         <pack name="Derby support" parent="OpenSourceDrivers" required="no" preselected="yes">
             <description>Apache Derby support (jdbc driver only).</description>
             <file src="lib/derbyclient.jar" targetdir="$INSTALL_PATH/lib"/>
-            <!--<file src="POSTGRESQL-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>-->
+            <!--<file src="DERBY-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>-->
         </pack>
         
         

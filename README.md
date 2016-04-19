@@ -19,6 +19,7 @@ Build
 
     git clone https://github.com/adriens/schemacrawler-izpack.git
     cd schemacrawler-izpack
+    mvn install:install-file -Dfile=lib/sqlite-jdbc-3.7.8.jar -DgroupId=org.xerial -DartifactId=sqlite-jdbc -Dversion=3.7.8 -Dpackaging=jar
     mvn clean site package
 
 This is it : the installer has been built (as well as documentation site un target/site/index.html).

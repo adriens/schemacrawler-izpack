@@ -1,6 +1,7 @@
 #!/bin/sh
 if [ $# -eq 0 ]; then
-java -classpath $INSTALL_PATH/lib/*:. schemacrawler.tools.generic.Main -help
+java -cp $(echo $INSTALL_PATH/lib/*.jar | tr ' ' ':') schemacrawler.Main $*
 else
-java -classpath $INSTALL_PATH/lib/*:. schemacrawler.tools.generic.Main $*
+java -cp $(echo $INSTALL_PATH/lib/*.jar | tr ' ' ':') schemacrawler.Main $*
 fi
+

@@ -19,7 +19,7 @@
 
     <variables>
         <variable name="TargetPanel.dir.windows" value="C:/Program Files/schemacrawler"/>
-        <variable name="TargetPanel.dir.unix" value="/usr/local/schemacrawler"/>
+        <variable name="TargetPanel.dir.unix" value="/opt/schemacrawler"/>
     </variables>
     <!-- 
         The gui preferences indication.
@@ -62,6 +62,8 @@
         <res id="LicencePanel.licence" src="LICENCE.txt"/>
         <res id="InfoPanel.info" src="README.txt"/>
         <res src="shortcutSpec.xml" id="shortcutSpec.xml"/>
+        
+        
     </resources>
     <natives>
         <native type="izpack" name="ShellLink.dll"/>
@@ -115,6 +117,7 @@
                 <os family="windows"/>
             </parsable>
             
+            <!-- Unix/linux -->
             <file src="schemacrawler.sh" targetdir="$INSTALL_PATH">
                 <os family="unix"/>
             </file>
@@ -125,6 +128,17 @@
                 <os family="unix"/>
             </executable>
             
+            <file src="create_symlink.sh" targetdir="$INSTALL_PATH">
+                <os family="unix"/>
+            </file>
+            <parsable targetfile="$INSTALL_PATH/create_symlink.sh">
+                <os family="unix"/>
+            </parsable>
+            <executable targetfile="$INSTALL_PATH/create_symlink.sh" stage="postinstall" keep="true" failure="ask">
+                <os family="unix"/>
+            </executable>
+            
+            <!-- Mac -->
             <file src="schemacrawler.sh" targetdir="$INSTALL_PATH">
                 <os family="mac"/>
             </file>

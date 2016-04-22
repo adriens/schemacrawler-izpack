@@ -150,7 +150,7 @@
                 <os family="mac"/>
             </executable>
             
-            <file src="create_symlink.sh" targetdir="$INSTALL_PATH">
+            <file src="create_symlink_mac.sh" targetdir="$INSTALL_PATH">
                 <os family="mac"/>
             </file>
             <parsable targetfile="$INSTALL_PATH/create_symlink_mac.sh">

@@ -5,13 +5,13 @@
 
     <info>
         <appname>schemacrawler</appname>
-        <appversion>11.01.01</appversion>
+        <appversion>14.08.02</appversion>
         <authors>
             <author name="Sualeh Fatehi" email="Sualeh.Fatehi@gmail.com"/>
             <author name="Adrien Sales" email="Adrien.Sales@gmail.com"/>
         </authors>
         <url>http://sualeh.github.io/SchemaCrawler/</url>
-        <javaversion>1.8</javaversion>
+        <javaversion>1.7</javaversion>
         <run-privileged/>
         <requiresjdk>no</requiresjdk>
         <!--<run-privileged condition="izpack.windowsinstall.7|izpack.macinstall"/>-->
@@ -97,6 +97,18 @@
         <pack name="OpenSourceDrivers" preselected="yes" required="no">
             <description>Install Open source drivers for these (open source and some proprietary) databases.</description>
         </pack>
+        
+        <!-- Additional schemacrawler plugins -->
+        <pack name="AdditionalPlugins" preselected="no" required="no">
+            <description>Additional schemacrawler plugins : lints, reporting.</description>
+        </pack>
+        <pack name="AdditionalLints" parent="AdditionalPlugins" required="no">
+            <description>Additional lints for better database design quality.</description>
+            <file src="lib/schemacrawler-additionnallints.jar" targetdir="$INSTALL_PATH/lib"/>
+        </pack>
+
+        
+        
         <!-- Proprietary drivers -->
         <pack name="ProprietaryDrivers" preselected="yes" required="no">
             <description>Install schemacrawler command lines for these proprietary databases. Jdbc drivers have to be manually downloaded and dropped in the lib directory on schemacrawler distribution.</description>

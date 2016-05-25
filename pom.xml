@@ -87,7 +87,7 @@
         <xstream.version>1.4.9</xstream.version>
         
         <!-- Addition lints -->
-        <schemacrawler-additionnallints.version>1.1.7</schemacrawler-additionnallints.version>
+        <schemacrawler-additional-lints.version>1.1.8</schemacrawler-additional-lints.version>
         
         <!-- Maven plugin properties -->
         <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
@@ -178,8 +178,8 @@
         <!-- Additional lints dependency -->
         <dependency>
 	    <groupId>com.github.mbarre</groupId>
-	    <artifactId>schemacrawler-additionnallints</artifactId>
-	    <version>${schemacrawler-additionnallints.version}</version>
+	    <artifactId>schemacrawler-additional-lints</artifactId>
+	    <version>${schemacrawler-additional-lints.version}</version>
 	</dependency>
     </dependencies>
     
@@ -332,8 +332,8 @@
                                 
                                 <artifactItem>
                                     <groupId>com.github.mbarre</groupId>
-                                    <artifactId>schemacrawler-additionnallints</artifactId>
-                                    <version>${schemacrawler-additionnallints.version}</version>
+                                    <artifactId>schemacrawler-additional-lints</artifactId>
+                                    <version>${schemacrawler-additional-lints.version}</version>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${izpack.staging}/lib</outputDirectory>
                                 </artifactItem>

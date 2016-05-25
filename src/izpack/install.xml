@@ -103,9 +103,9 @@
             <description>Additional schemacrawler plugins : lints, reporting.</description>
         </pack>
         <pack name="AdditionalLints" parent="AdditionalPlugins" required="no">
-            <description>Additional lints for better database design quality. See https://github.com/mbarre/schemacrawler-additionnallints
+            <description>Additional lints for better database design quality. See https://github.com/mbarre/schemacrawler-additional-lints
             for more details.</description>
-            <file src="lib/schemacrawler-additionnallints.jar" targetdir="$INSTALL_PATH/lib"/>
+            <file src="lib/schemacrawler-additionnal-lints.jar" targetdir="$INSTALL_PATH/lib"/>
         </pack>
 
         

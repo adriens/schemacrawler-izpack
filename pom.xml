@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github</groupId>
     <artifactId>schemacrawler-lzpack</artifactId>
-    <version>14.08.02</version>
+    <version>14.08.04</version>
     <packaging>jar</packaging>
     
     
@@ -67,7 +67,7 @@
         <izpack.staging>${project.build.directory}/staging</izpack.staging>
         
         <!-- jdbc drivers versions -->
-        <h2.version>1.4.191</h2.version>
+        <h2.version>1.4.192</h2.version>
         <hsqldb.version>2.3.4</hsqldb.version>
         <jtds.version>1.3.1</jtds.version>
         <mariadb.version>1.4.5</mariadb.version>

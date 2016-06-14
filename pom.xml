@@ -87,7 +87,7 @@
         <xstream.version>1.4.9</xstream.version>
         
         <!-- Addition lints -->
-        <schemacrawler-additional-lints.version>1.1.8</schemacrawler-additional-lints.version>
+        <schemacrawler-additional-lints.version>1.1.9</schemacrawler-additional-lints.version>
         
         <!-- Maven plugin properties -->
         <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>

@@ -282,13 +282,6 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
-                                    <artifactId>schemacrawler-mariadb</artifactId>
-                                    <version>${project.version}</version>
-                                    <overWrite>true</overWrite>
-                                    <outputDirectory>${izpack.staging}/lib</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-offline</artifactId>
                                     <version>${project.version}</version>
                                     <overWrite>true</overWrite>

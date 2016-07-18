@@ -133,23 +133,23 @@
             
             <!-- Unix/linux -->
             <file src="schemacrawler.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
+                <os family="unix" name="Linux"/>
             </file>
             <parsable targetfile="$INSTALL_PATH/schemacrawler.sh">
-                <os family="unix"/>
+                <os family="unix" name="Linux"/>
             </parsable>
             <executable targetfile="$INSTALL_PATH/schemacrawler.sh" stage="never" keep="true">
-                <os family="unix"/>
+                <os family="unix" name="Linux"/>
             </executable>
             
             <file src="create_symlink.sh" targetdir="$INSTALL_PATH">
-                <os family="unix"/>
+                <os family="unix" name="Linux"/>
             </file>
             <parsable targetfile="$INSTALL_PATH/create_symlink.sh">
-                <os family="unix"/>
+                <os family="unix" name="Linux"/>
             </parsable>
             <executable targetfile="$INSTALL_PATH/create_symlink.sh" stage="postinstall" keep="true" failure="ask">
-                <os family="unix"/>
+                <os family="unix" name="Linux"/>
             </executable>
             
             <!-- Mac -->

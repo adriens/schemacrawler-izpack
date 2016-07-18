@@ -5,13 +5,13 @@
 
     <info>
         <appname>schemacrawler</appname>
-        <appversion>14.08.03</appversion>
+        <appversion>14.08.04</appversion>
         <authors>
             <author name="Sualeh Fatehi" email="Sualeh.Fatehi@gmail.com"/>
             <author name="Adrien Sales" email="Adrien.Sales@gmail.com"/>
         </authors>
         <url>http://sualeh.github.io/SchemaCrawler/</url>
-        <javaversion>1.7</javaversion>
+        <javaversion>1.8</javaversion>
         <run-privileged/>
         <requiresjdk>no</requiresjdk>
         <!--<run-privileged condition="izpack.windowsinstall.7|izpack.macinstall"/>-->
@@ -190,7 +190,6 @@
         
         <pack name="MariaDb support" parent="OpenSourceDrivers" required="no" preselected="yes">
             <description>MariaDb full support (dedicated schemacrawler lib and jdbc driver).</description>
-            <file src="lib/schemacrawler-mariadb.jar" targetdir="$INSTALL_PATH/lib"/>
             <file src="lib/mariadb-java-client.jar" targetdir="$INSTALL_PATH/lib"/>
             <!--<file src="MARIADB-DRIVER.LICENSE.txt" targetdir="$INSTALL_PATH/lib"/>-->
         </pack>
